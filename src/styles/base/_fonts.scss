@@ -1,0 +1,17 @@
+@import "../helpers/mixins";
+
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Regular.ttf");
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Light.ttf", lighter);
+
+@include font-face("Open-Sans", "../fonts/OpenSans/OpenSans-Regular.ttf");
+@include font-face("Open-Sans", "../fonts/OpenSans/OpenSans-Italic.ttf", normal, italic);
+@include font-face("Open-Sans", "../fonts/OpenSans/OpenSans-Bold.ttf", bold);
+@include font-face("Open-Sans", "../fonts/OpenSans/OpenSans-BoldItalic.ttf", bold, italic);
+@include font-face("Open-Sans", "../fonts/OpenSans/OpenSans-Light.ttf", lighter);
+@include font-face("Open-Sans", "../fonts/OpenSans/OpenSans-Lighttalic.ttf", lighter, italic);
+
+@include font-face("San-Francisco", "../fonts/San-Francisco/SFUIDisplay-Regular.ttf");
+@include font-face("San-Francisco", "../fonts/San-Francisco/SFUIDisplay-Bold.ttf", bold);
+@include font-face("San-Francisco", "../fonts/San-Francisco/SFUIDisplay-Thin.ttf", 200);
+@include font-face("San-Francisco", "../fonts/San-Francisco/SFUIDisplay-Ultralight.ttf", 100);
+@include font-face("San-Francisco", "../fonts/San-Francisco/SFUIDisplay-Light.ttf", lighter);

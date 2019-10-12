@@ -18,7 +18,7 @@ module.exports = {
                     test: /node_modules/,
                     chunks: "initial",
                     name: "vendor",
-                    enforce: true
+                    enforce: false
                 }
             }
         }
@@ -43,7 +43,8 @@ module.exports = {
 
     resolve: {
         alias: {
-            "%modules%": path.resolve(__dirname, "src/blocks/modules")
+            "%modules%": path.resolve(__dirname, "src/blocks/modules"),
+            "%node_libs%": path.resolve(__dirname, "node_modules/")
         }
     }
 };

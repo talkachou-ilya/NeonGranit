@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+    padding: 10%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: "Montserrat", monospace;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-align: center;
+        margin: 0 0 20px;
+        //word-spacing: -20px;
+        font-size: 3rem;
+    }
+    &__sub-title {
+        max-width: 345px;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 100;
+        font-family: "San-Francisco", sans-serif;
+    }
+    &__nav-link {
+        display: inline-block;
+        position: relative;
+        margin: 10px 0;
+        padding: 7px 10px 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        //&:before {
+        //    content: "";
+        //    position: absolute;
+        //    bottom: 0;
+        //    left: 0;
+        //    width: 0;
+        //    height: 100%;
+        //    border: 1px solid #ffffff;
+        //    -webkit-transition: .3s;
+        //    -moz-transition: .3s;
+        //    -ms-transition: .3s;
+        //    -o-transition: .3s;
+        //    transition: .3s;
+        //    border-left: none;
+        //    border-right: none;
+        //    opacity: 0;
+        //}
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+            transition: .3s;
+            background-color: #fff;
+            opacity: 0;
+        }
+        &:after {
+            bottom: 0;
+            left: 0;
+        }
+        &:before {
+            top: 0;
+            right: 0;
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        &:hover:before, &:hover:after {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    &__nav-list {
+        list-style-type: none;
+    }
+}
+
+.fixed-bg {
+    background: url("../../../img/header/grieving5.png") #000;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -90;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
