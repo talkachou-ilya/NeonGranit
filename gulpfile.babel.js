@@ -16,7 +16,10 @@ const requireDir = require( "require-dir" ),
 			]
 		},
 		styles : {
-			src : "./src/styles/main.{scss,sass}",
+			src : [
+				"./src/styles/main.{scss,sass}",
+				"./node_modules/wowjs/css/libs/animate.css",
+			],
 			dist : "./dist/styles/",
 			watch : [
 				"./src/blocks/**/*.{scss,sass}",
@@ -25,8 +28,8 @@ const requireDir = require( "require-dir" ),
 		},
 		scripts : {
 			src : [
+				"./src/js/**/*.js",
 				"./src/js/index.js",
-				"./src/js/**/*.js"
 			],
 			dist : "./dist/js/",
 			watch : [

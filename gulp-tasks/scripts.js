@@ -9,6 +9,7 @@ import rename from "gulp-rename";
 import browsersync from "browser-sync";
 import debug from "gulp-debug";
 import yargs from "yargs";
+// import strip from "gulp-strip-comments";
 
 const webpackConfig = require("../webpack.config.js"),
     argv = yargs.argv,
@@ -23,6 +24,7 @@ gulp.task("scripts", () => {
         .pipe(gulpif(production, rename({
             suffix: ".min"
         })))
+        // .pipe(strip())
         .pipe(gulp.dest(paths.scripts.dist))
         .pipe(debug({
             "title": "JS files"

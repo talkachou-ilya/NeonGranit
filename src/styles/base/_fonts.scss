@@ -1,5 +1,8 @@
 @import "../helpers/mixins";
 
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap&subset=cyrillic");
+
+
 @include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Regular.ttf");
 @include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Light.ttf", lighter);
 
